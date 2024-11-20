@@ -1,6 +1,6 @@
 from .models import Idea, Vote
 from rest_framework import viewsets
-from serializer import IdeaSerializer, VoteSerializer
+from .serializer import IdeaSerializer, VoteSerializer
 
 class IdeaViewSet(viewsets.ModelViewSet):
     queryset = Idea.objects.all()
